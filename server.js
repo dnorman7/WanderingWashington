@@ -25,7 +25,7 @@ app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 app.use('/', indexRouter);
-app.use('/hikes', hikesRouter);
+//app.use('/hikes', hikesRouter);
 
 // app to listen
 app.listen(port, function() {
