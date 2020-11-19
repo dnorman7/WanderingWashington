@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here are all the Notes</title>
+</head>
+<body>
+    <h1>Here are all your hikes</h1>
+    <a href="/">Go Back Home</a>
+    <a href="/hikes/new">Create A New Hike</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Length</th>
+                <th>Intensity</th>
+                <th>Location</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% hikes.forEach(function(hike) { %>
+                <tr>
+                    <td>
+                        <%= hike.Name %>
+                    </td>
+                    <td>
+                        <%= hike.Length %>
+                    </td>
+                    <td>
+                        <%= hike.Intensity %>
+                    </td>
+                    <td>
+                        <%= hike.Location %>
+                    </td>
+                    <td>
+                        <form action="/hikes/<%= hike._id %>?_method=DELETE" method="POST">
+                            <input type="submit" value="DELETE">
+                        </form>
+                        <a href="/hikes/<%= hike._id %>/edit">EDIT</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>

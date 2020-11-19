@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Hike</title>
+</head>
+<body>
+    <h1>Edit Hike</h1>
+    <a href="/hikes">Cancel</a>
+    <a href="/">Go Back Home</a>
+
+    <form action="/hikes/<%= hike._id %>?_method=PUT" method="POST">
+        <input type="text" name="Name" value="<%= hike.Name %>">
+        <textarea name="Location" cols="10" rows="5"><%= hike.Location %></textarea>
+        <textarea name="Intensity" cols="10" rows="5"><%= hike.Intensity %></textarea>
+        <textarea name="Length" cols="10" rows="5"><%= hike.Length %></textarea>
+        <textarea name="PhotoURL" cols="10" rows="5"><%= hike.PhotoURL %></textarea>
+        <input type="submit" value="Update Hike">
+    </form>
+
+</body>
+</html>

@@ -10,6 +10,7 @@ A web application helping people find hikes suited for them as well as helping c
 - Morgan
 - Google Fonts
 - MongoDB
+- Node.js
 
 
 ## Wireframes

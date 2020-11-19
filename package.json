@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "method-override": "^3.0.0",
     "mongoose": "^5.10.15",
     "morgan": "^1.10.0"
   },
@@ -13,5 +15,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnorman7/WanderingWashington.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dnorman7/WanderingWashington/issues"
+  },
+  "homepage": "https://github.com/dnorman7/WanderingWashington#readme",
   "description": ""
 }

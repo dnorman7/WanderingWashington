@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const methodOverride = require('method-override');
     // router modules
 const indexRouter = require('./routes/index');
-//const hikesRouter = require('./routes/hikes');
+const hikesRouter = require('./routes/hikes');
 const { response } = require('express');
 
 // express app
@@ -25,7 +25,7 @@ app.use(methodOverride('_method'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 app.use('/', indexRouter);
-//app.use('/hikes', hikesRouter);
+app.use('/hikes', hikesRouter);
 
 // app to listen
 app.listen(port, function() {
