@@ -32,13 +32,6 @@ function create(req, res) {
     });
 }
 
-/*
-    req.body = {'title': 'here is a title'} -> form data
-    req.params.id = '/notes/:id' => /notes/dowqbdiuwbidh89e2g2e72e72e
-
-*/
-
-
 function deleteHike(req, res) {
     Hike.findByIdAndDelete(req.params.id, function(err, deletedHike) {
         res.redirect('/hikes');

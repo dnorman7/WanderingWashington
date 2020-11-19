@@ -5,7 +5,9 @@ const methodOverride = require('method-override');
     // router modules
 const indexRouter = require('./routes/index');
 const hikesRouter = require('./routes/hikes');
-const { response } = require('express');
+const contactRouter = require('./routes/contact');
+
+
 
 // express app
 const app = express();
@@ -26,6 +28,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 app.use('/', indexRouter);
 app.use('/hikes', hikesRouter);
+app.use('/contact', contactRouter);
+
 
 // app to listen
 app.listen(port, function() {
