@@ -13,7 +13,7 @@ const contactRouter = require('./routes/contact');
 const app = express();
 
 // port value
-const port = 3000;
+const port = (process.env.PORT || 5000);
 
 // connect to DB
 require('./config/database');
