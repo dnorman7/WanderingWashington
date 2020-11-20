@@ -10,23 +10,29 @@ A web application helping people find hikes suited for them as well as helping c
 - Morgan
 - Google Fonts
 - MongoDB
-- Node.js
 
 
 ## Wireframes
 ![Wireframe](img/Home-Page-Wireframe.png)
 ![Wireframe](img/contactpagewireframe.png)
-![Wireframe](img/Trail-Category-Wireframe.png)
 ![Wireframe](img/Trail-Tracker-Wireframe.png)
 
 ## ERD
 ![Wireframe](img/ERD.png)
 
 ## Screenshots
+![Wireframe](img/landing.png)
+![Wireframe](img/list.png)
+![Wireframe](img/edit.png)
+![Wireframe](img/new.png)
 
 ## Getting Started
-[Click Here](#) to see the deplyed app!
+[Click Here](https://wandering-washington.herokuapp.com/) to see the deplyed app!
 
 ## Obstacles
+- Deploying application on Heroku
+- Sending messages to mongoDB
 
 ## Future Enhancements
+- create a log in for users
+- have users leave reviews on the featured hikes
