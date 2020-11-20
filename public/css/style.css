@@ -99,3 +99,47 @@ div {
     font-size: 30px;
     color: white;
 }
+
+.hikes {
+    text-align: center;
+}
+
+th {
+    font-family: 'Architects Daughter', cursive;
+    color: rgb(248,162,185);
+}
+
+.hikesbody {
+    margin: 0;
+    padding: 30px;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2016%2F01%2F228327-landscape-nature-silhouette-trees-clear_sky-sunset-evening-lake.jpg&f=1&nofb=1');
+    background-size: cover;
+    background-position : center;
+    background-repeat: no-repeat;
+
+}
+
+tbody {
+    color: white;
+}
+
+.hikelinks {
+    display: inline-block;
+    border: none;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.button:hover{
+    background-color:white;
+}
+
+.button {
+    background-color: red;
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 5px;
+    color: rgb(10, 10, 10);
+}
