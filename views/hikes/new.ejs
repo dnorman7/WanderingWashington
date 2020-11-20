@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Create A New Hike</title>
 </head>
-<body>
-    <h1>Create A New Hike</h1>
-    <a href="/hikes">Cancel</a>
-    <a href="/">Go Back Home</a>
-
+<body class="new">
+    <h1>Add A New Hike</h1>
+    <div class="hikelinks">
+    <a style="color: white" href="/hikes">Cancel</a>
+    </div>
+    <div class="hikelinks">
+    <a style="color: white" href="/">Go Back Home</a>
+    </div>
     <form action="/hikes" method="POST">
-        Name:<input type="text" name="Name"><br>
+        Name:   <input type="text" name="Name"><br>
         Length:<input type= "text" name="Length"><br>
         Intensity:<input type="text" name="Intensity"><br>
         Location:<input type="text" name="Location"><br>
-        <input type="submit" value="Add Hike">
+        <input class="button2" type="submit" value="Add Hike">
     </form>
 
 </body>

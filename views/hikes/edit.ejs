@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Edit Hike</title>
 </head>
-<body>
+<body class="editpage">
     <h1>Edit Hike</h1>
-    <a href="/hikes">Cancel</a>
-    <a href="/">Go Back Home</a>
+    <div class="hikelinks">
+    <a style="color: white" href="/hikes">Cancel</a>
+    </div>
+    <div class="hikelinks">
+    <a style="color: white" href="/">Go Back Home</a>
+    </div>
 
-    <form action="/hikes/<%= hike._id %>?_method=PUT" method="POST">
-        <input type="text" name="Name" value="<%= hike.Name %>">
-        <textarea name="Location" cols="10" rows="5"><%= hike.Location %></textarea>
-        <textarea name="Intensity" cols="10" rows="5"><%= hike.Intensity %></textarea>
-        <textarea name="Length" cols="10" rows="5"><%= hike.Length %></textarea>
-        <textarea name="PhotoURL" cols="10" rows="5"><%= hike.PhotoURL %></textarea>
-        <input type="submit" value="Update Hike">
+    <form class= "edit" action="/hikes/<%= hike._id %>?_method=PUT" method="POST">
+        <textarea name="Name" cols="20" rows="5"><%= hike.Name %></textarea>
+        <textarea name="Location" cols="20" rows="5"><%= hike.Location %></textarea>
+        <textarea name="Intensity" cols="20" rows="5"><%= hike.Intensity %></textarea>
+        <textarea name="Length" cols="20" rows="5"><%= hike.Length %></textarea>
+        <input class="button2" type="submit" value="Update Hike">
     </form>
 
 </body>

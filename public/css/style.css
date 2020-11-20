@@ -18,6 +18,7 @@ h1 {
     color: rgb(248,162,185);
     font-size: 42px;
     font-family: 'Lobster', cursive;
+    text-align: center;
 
 }
 
@@ -130,6 +131,7 @@ tbody {
     padding: 25px;
     font-size: 20px;
     padding: 10px;
+    color: white;
 }
 
 .button:hover{
@@ -142,4 +144,48 @@ tbody {
     font-size: 12px;
     padding: 5px;
     color: rgb(10, 10, 10);
+}
+
+.edit {
+    text-align: center;
+}
+
+.editpage {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2016%2F01%2F228327-landscape-nature-silhouette-trees-clear_sky-sunset-evening-lake.jpg&f=1&nofb=1');
+    background-size: cover;
+    background-position : center;
+    background-repeat: no-repeat;
+}
+
+.button2:hover {
+    box-shadow: 1px 1px 12px 5px white;
+}
+
+.button2 {
+    background-color:black;
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 5px;
+    color: pink;
+}
+
+.new {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2016%2F01%2F228327-landscape-nature-silhouette-trees-clear_sky-sunset-evening-lake.jpg&f=1&nofb=1');
+    background-size: cover;
+    background-position : center;
+    background-repeat: no-repeat;
+}
+
+form {
+    text-align: center;
+    padding: 10px;
+}
+
+.contact {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2016%2F01%2F228327-landscape-nature-silhouette-trees-clear_sky-sunset-evening-lake.jpg&f=1&nofb=1');
+    background-size: cover;
+    background-position : center;
+    background-repeat: no-repeat;
+    font-family: 'Architects Daughter', cursive;
+    color: white;
 }
